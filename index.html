@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vojin Deronjic</title>
+  <meta name="description" content="I build the operational infrastructure that fixes systems problems for content teams. Whatever the format." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0a0b;
+      --surface: #141416;
+      --surface-hover: #1c1c1f;
+      --text-primary: #f4f4f3;
+      --text-secondary: #9d9d9a;
+      --text-muted: #6a6a67;
+      --border: #232325;
+      --border-strong: #343437;
+      --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+    }
+    .page { max-width: 660px; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+    .header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 4rem; flex-wrap: wrap; }
+    .header-name { font-size: 14px; color: var(--text-secondary); }
+    .header-name strong { color: var(--text-primary); font-weight: 600; }
+    .divider { width: 1px; height: 16px; background: var(--border-strong); }
+    .header-role { font-size: 13px; color: var(--text-muted); }
+    .hero { margin-bottom: 2.5rem; }
+    .hero h1 {
+      font-size: clamp(27px, 5.2vw, 34px);
+      font-weight: 600; line-height: 1.28;
+      color: var(--text-primary); margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 em { font-style: normal; color: var(--text-muted); }
+    .hero p { font-size: 16px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1rem; }
+    .hero p.statement { color: var(--text-primary); font-weight: 500; margin-bottom: 0; }
+    .wip {
+      font-size: 13px; color: var(--text-muted);
+      margin-bottom: 3.5rem;
+    }
+    .contact {
+      padding: 1.6rem 1.85rem; background: var(--surface);
+      border-radius: 14px; border: 0.5px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.25rem; flex-wrap: wrap;
+    }
+    .contact p { font-size: 15px; color: var(--text-secondary); }
+    .contact-links { display: flex; gap: 0.5rem; flex-shrink: 0; }
+    .contact-links a {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 14px; font-weight: 500; padding: 8px 16px;
+      border-radius: 8px; border: 0.5px solid var(--border-strong);
+      color: var(--text-primary); text-decoration: none; background: var(--bg);
+      transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+    }
+    .contact-links a:hover { border-color: var(--text-muted); background: var(--surface-hover); }
+    .contact-links a:active { transform: scale(0.98); }
+    .contact-links svg { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="header">
+      <span class="header-name"><strong>Vojin</strong> Deronjic</span>
+      <div class="divider"></div>
+      <span class="header-role">Content operations &amp; systems</span>
+    </div>
+
+    <section class="hero">
+      <h1>Most content teams don't have a quality problem. They have a <em>systems problem.</em></h1>
+      <p>Work moves fast, formats multiply, and suddenly nobody knows who owns what. Delivery gets unpredictable. Leadership loses visibility. Things fall through the cracks.</p>
+      <p class="statement">I build the infrastructure that fixes it. Whatever the format.</p>
+    </section>
+
+    <div class="wip">Full site on its way.</div>
+
+    <div class="contact">
+      <p>Interested in working together?</p>
+      <div class="contact-links">
+        <a href="mailto:vojinderonjic@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email
+        </a>
+        <a href="https://linkedin.com/in/vojinderonjic" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
