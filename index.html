@@ -45,36 +45,32 @@
       min-height: 100vh;
     }
     .page { max-width: 640px; margin: 0 auto; padding: 5rem 1.5rem 5rem; }
-    .header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 2.75rem; flex-wrap: wrap; }
+    .header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 3.5rem; flex-wrap: wrap; }
     .header-name { font-size: 16px; color: var(--text-secondary); }
     .header-name strong { color: var(--text-primary); font-weight: 600; }
     .divider { width: 1px; height: 18px; background: var(--border-strong); }
     .header-role { font-size: 16px; color: var(--text-muted); }
-    .hero { margin-bottom: 2.75rem; }
+    .hero { margin-bottom: 2.5rem; }
     .hero h1 {
       font-size: clamp(28px, 5.4vw, 36px);
       font-weight: 600; line-height: 1.25;
-      color: var(--text-primary); margin-bottom: 1.75rem;
+      color: var(--text-primary); margin-bottom: 1.5rem;
       letter-spacing: -0.02em;
     }
     .hero h1 em { font-style: normal; color: var(--text-muted); }
-    .hero p { font-size: 16px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 1.25rem; }
+    .hero p { font-size: 16px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 1.5rem; }
     .hero p.statement {
-      color: var(--text-primary); font-weight: 500; font-size: 16px;
-      margin-bottom: 0;
-    }
-    .wip {
-      display: inline-flex; align-items: center;
-      font-size: 11px; color: var(--text-muted);
-      margin-bottom: 3rem;
+      color: var(--text-primary); font-weight: 500; font-size: 18px;
+      line-height: 1.5; margin-bottom: 0;
     }
     .contact {
       padding: 1.75rem 1.9rem; background: var(--surface);
       border-radius: 16px; border: 0.5px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
       gap: 1.25rem; flex-wrap: wrap;
+      margin-bottom: 3.5rem;
     }
-    .contact p { font-size: 15px; color: var(--text-secondary); }
+    .contact p { font-size: 16px; color: var(--text-secondary); }
     .contact p strong { color: var(--text-primary); font-weight: 500; }
     .contact-links { display: flex; gap: 0.5rem; flex-shrink: 0; }
     .contact-links a {
@@ -87,6 +83,9 @@
     .contact-links a:hover { border-color: var(--text-secondary); background: var(--surface-hover); }
     .contact-links a:active { transform: scale(0.98); }
     .contact-links svg { width: 16px; height: 16px; }
+    .wip {
+      font-size: 13px; color: var(--text-muted);
+    }
   </style>
 </head>
 <body>
@@ -98,12 +97,10 @@
     </div>
 
     <section class="hero">
-      <h1>Most content teams don't have a quality problem. They have a <em>systems problem.</em></h1>
-      <p>Work moves fast, formats multiply, and suddenly nobody knows who owns what. Delivery gets unpredictable. Leadership loses visibility. Things fall through the cracks.</p>
+      <h1>Most content teams don&rsquo;t have a quality problem. They have a systems problem.</h1>
+      <p>At first, it&rsquo;s small. A draft stuck in review. A handoff that breaks down. A deadline that quietly slips. Then it compounds, and delivery stops being something anyone can predict.</p>
       <p class="statement">I build the infrastructure that fixes it. Whatever the format.</p>
     </section>
-
-    <div class="wip">Full site on its way.</div>
 
     <div class="contact">
       <p><strong>Interested in working together?</strong></p>
@@ -118,6 +115,8 @@
         </a>
       </div>
     </div>
+
+    <div class="wip">Full site on its way.</div>
   </main>
 </body>
 </html>
